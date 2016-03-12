@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Assortment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h3>Распродажа книг</h3>
+    <table>
+        <tr class="header">
+            <td width="auto"> <p>Название книги</p></td>
+            <td width="auto"><p>Автор</p></td>
+            <td width="auto"><p>Цена</p></td>
+            <td width="200"><p>В наличии</p></td>
+        </tr>
+        @foreach (var b in ViewBag.Books)
+            {
+            <tr>
+                <td><p>@b.Name</p></td>
+                <td><p>@b.Author</p></td>
+                <td><p>@b.Price</p></td>
+                <td><p>@b.InLibrary</p></td>
+                @if (b.InLibrary > 0)
+                {
+                    <td><p><a href="/Home/GetBook/@b.Id">Взять</a></p></td>
+                }
+                @if (b.InLibrary <= 0)
+                {
+                    <td><p> Книги розданы</p></td>
+                }
+            </tr>
+        }
+    </table>
+</div>

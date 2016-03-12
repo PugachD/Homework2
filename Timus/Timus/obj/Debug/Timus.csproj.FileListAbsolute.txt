@@ -1,0 +1,6 @@
+D:\мое\Курсы\GitHub1\Timus\Timus\bin\Debug\Timus.exe.config
+D:\мое\Курсы\GitHub1\Timus\Timus\bin\Debug\Timus.exe
+D:\мое\Курсы\GitHub1\Timus\Timus\bin\Debug\Timus.pdb
+D:\мое\Курсы\GitHub1\Timus\Timus\obj\Debug\Timus.csprojResolveAssemblyReference.cache
+D:\мое\Курсы\GitHub1\Timus\Timus\obj\Debug\Timus.exe
+D:\мое\Курсы\GitHub1\Timus\Timus\obj\Debug\Timus.pdb

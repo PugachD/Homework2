@@ -1,0 +1,9 @@
+﻿@model ElectronicLibrary.Models.User
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h1> Регистрация прошла успешно! Спасибо, @Model.FirstName, за то, что выбрали именно нас!!</h1>
+    <h2> Перейти к выбору книг @Html.ActionLink("Ассортимент", "Assortment", "Home")</h2>
+</div>

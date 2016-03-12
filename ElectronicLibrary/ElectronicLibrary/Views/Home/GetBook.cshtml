@@ -1,0 +1,9 @@
+﻿@model ElectronicLibrary.Models.Book
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h1> Вы взяли книгу " @Model.Name " , @Model.Author </h1>
+    <p> Перейти к выбору книг @Html.ActionLink("Ассортимент", "Assortment", "Home")</p>
+</div>

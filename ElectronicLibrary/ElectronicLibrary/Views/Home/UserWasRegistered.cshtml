@@ -1,0 +1,10 @@
+﻿@model ElectronicLibrary.Models.User
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <p> Такой пользователь уже зарегистрирован</p>
+    <p> @Model.FirstName, Вы что-то запамятовали!</p>
+    <p> Перейти к выбору книг @Html.ActionLink("Ассортимент", "Assortment", "Home")</p>
+</div>

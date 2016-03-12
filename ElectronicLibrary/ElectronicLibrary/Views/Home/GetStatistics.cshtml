@@ -1,0 +1,18 @@
+﻿@model IEnumerable<ElectronicLibrary.Models.User>
+@{
+    ViewBag.Title = "GetStatistics";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Статистика по взятым книгам</h2>
+<table border="1">
+    @foreach (var person in Model)
+    {
+        <tr>
+            <td><center><p>@person.FirstName @person.Surname взял книгу @if (person.Book != null)
+            {<p>@person.Book.Name Взял</p>} @if (person.Book == null)
+            {<p>Нет книг на руках. Отдал </p>}  @person.Date  </p></center></td>
+        </tr>
+    }
+
+</table>

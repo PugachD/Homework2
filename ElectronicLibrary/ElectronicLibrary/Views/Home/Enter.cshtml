@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h3>Ввод учетных данных</h3>
+    <form method="post" action="">
+        <table>
+            <tr>
+                <td><p>Введите свое имя </p></td>
+                <td><input type="text" name="FirstName" /> </td>
+            </tr>
+            <tr>
+                <td><p>Введите свою фамилию</p></td>
+                <td>
+                    <input type="text" name="Surname" />
+                </td>
+            </tr>
+            <tr>
+                <td><p>Введите мобильный телефон</p></td>
+                <td>
+                    <input type="number" name="PhoneNumber" />
+                </td>
+            </tr>
+            <tr>
+                <td><p>Введите адрес</p></td>
+                <td>
+                    <input type="text" name="Address" />
+                </td>
+            </tr>
+            <tr><td><input type="submit" value="Войти" /> </td><td></td></tr>
+        </table>
+    </form>
+</div>
